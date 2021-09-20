@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Dojo Survey Index</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    </head>
+    <body class="bg-light">
+        
+        <div class="container-sm bg-secondary text-white my-5 p-3 text-center col-6">
+            <p class="h1 mb-5 text-center text-dark fw-bolder">Dojo Survey</p>
+            <form action='/process' method='post' class="row d-flex justify-content-center">
+                <div class="mb-3 row justify-content-center align-items-center">
+                    <label for="name" class="col form-label">Name:</label>
+                    <div class="col">
+                        <input type="text" name="name" class="form-control">
+                    </div>
+                </div>
+
+                <div class="mb-3 row justify-content-center align-items-center">
+                    <label for="location" class="col">Location:</label>
+                    <div class="col">
+                        <select name="location" class="col form-select form-control text-center">
+                            <option value="Costa Rica">Costa Rica</option>
+                            <option value="Ecuador">Ecuador</option>
+                            <option value="Mexico">Mexico</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="mb-3 row align-items-center justify-content-center">
+                    <label for="gender" class="col-6">Gender:</label>
+                    <div class="col">
+                        <input type="radio" name="gender" class="col" value="M">
+                        <label for="M" class="col-2">M</label>
+                        <input type="radio" name="gender" class="col" value="F">
+                        <label for="F" class="col-2">F</label>
+                        <input type="radio" name="gender" class="col" value="O">
+                        <label for="O" class="col-2">Other</label>
+                    </div>
+                </div>
+
+                <div class="row mb-3 align-items-center justify-content-center">
+                    <label class="col-6 align-self-start">Clubs:</label>
+                    <div class="col-6">
+                        
+
+                        <div class="form-check">
+                            <input type="checkbox" name="LGTIQ+" class="form-check-input" >
+                            <label for="LGTIQ+" class="form-check-label">LGBTIQ+</label>
+                        </div>
+    
+                        <div class="form-check">
+                            <input type="checkbox" name="Women who code" class="col form-check-input" >
+                            <label for="Women who code" class="col form-check-label">Women who code+</label>
+                        </div>
+    
+                        <div class="form-check">
+                            <input type="checkbox" name="Veterans" class="col form-check-input" >
+                            <label for="Veterans" class="col form-check-label">Veterans</label>
+                        </div>
+    
+                        <div class="form-check">
+                            <input type="checkbox" name="Sports" class="col form-check-input" >
+                            <label for="Sports" class="col form-check-label">Sports</label>
+                        </div>
+    
+                        <div class="form-check">
+                            <input type="checkbox" name="Foodies" class="col form-check-input" >
+                            <label for="Foodies" class="col form-check-label">Foodies</label>
+                        </div>
+
+                    </div>
+
+                    
+
+                </div>
+
+                <div class="row mb-3 text-align-center justify-content-center">
+                    <label for="comment" class="col justify-content-start">Comments:</label>
+                    <div class="col"></div>
+                </div>
+
+                <div class="row m-3 px-4 text-align-center justify-content-center">
+                    <textarea name="comment" class="col-12 mb-3 col-form-control"></textarea>
+                </div>
+               
+                
+
+                <div class="row justify-content-center">
+                    <input type="submit" class="col-3 mx-2 btn btn-dark">
+                </div>
+
+
+            </form>
+
+        </div>
+            
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+        
+    </body>
+</html>
